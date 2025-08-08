@@ -20,7 +20,7 @@ Buildforce E-commerce API provides comprehensive product management, inventory c
 ### Authentication
 ```bash
 # Login to get JWT token
-curl -X POST https://api.buildforce.com/api/v1/auth/login \
+curl -X POST https://api.buildforce.co.ke/api/v1/auth/login \
   -H "Content-Type: application/json" \
   -d '{
     "email": "admin@buildforce.com",
@@ -30,7 +30,7 @@ curl -X POST https://api.buildforce.com/api/v1/auth/login \
 
 ### Get All Products
 ```bash
-curl -X GET https://api.buildforce.com/api/v1/products \
+curl -X GET https://api.buildforce.co.ke/api/v1/products \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 
@@ -43,13 +43,3 @@ curl -X GET https://api.buildforce.com/api/v1/products \
 - [Media](./docs/media.md) - Image upload and management
 - [Error Handling](./docs/errors.md) - Error responses and codes
 
-## Rate Limiting
-- **Public endpoints:** 100 requests per minute
-- **Private endpoints:** 1000 requests per minute
-- **File uploads:** 10 uploads per minute
-
-## Support
-For API support and questions, please contact the development team.
-
-## License
-This API documentation is proprietary to Buildforce. 
